@@ -112,11 +112,11 @@ endif()
 
 option(WITH_NO_DEPRECATED_CODE "Do not include deprecated code" OFF)
 
-option(WITH_STL "Whether to use Standard Library for C++ latest features" OFF)
+option(WITH_STL "Whether to use Standard Library for C++ latest features" ON)
 option(WITH_GSL
        "Whether to use Guidelines Support Library for C++ latest features" OFF)
 
-option(WITH_ABSEIL "Whether to use Abseil for C++latest features" OFF)
+option(WITH_ABSEIL "Whether to use Abseil for C++latest features" ON)
 
 if(NOT CMAKE_SOURCE_DIR STREQUAL CMAKE_CURRENT_SOURCE_DIR)
   set(OPENTELEMETRY_INSTALL_default ON)

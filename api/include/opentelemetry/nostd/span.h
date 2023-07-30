@@ -4,7 +4,6 @@
 #pragma once
 
 // Try to use either `std::span` or `gsl::span`
-#ifdef HAVE_CPP_STDLIB
 #  include <array>
 #  include <cstddef>
 #  include <iterator>
@@ -26,7 +25,6 @@
 #  if OPENTELEMETRY_OPTION_USE_STD_SPAN
 #    include "opentelemetry/std/span.h"
 #  endif
-#endif
 
 // Fallback to `nostd::span` if necessary
 #if !defined(HAVE_SPAN)
