@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1698672372621,
+  "lastUpdate": 1698672381750,
   "repoUrl": "https://github.com/GerHobbelt/opentelemetry-cpp",
   "entries": {
     "OpenTelemetry-cpp api Benchmark": [
@@ -41158,6 +41158,54 @@ window.BENCHMARK_DATA = {
             "value": 2289259.6674900427,
             "unit": "ns/iter",
             "extra": "iterations: 255\ncpu: 509047.84313725494 ns\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "marc.alff@oracle.com",
+            "name": "Marc Alff",
+            "username": "marcalff"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "17da6d87c1fbd5e63260b3eb414e426e255dfebd",
+          "message": "[API] Add a new AddLink() operation to Span (#2380)",
+          "timestamp": "2023-10-27T18:27:57+02:00",
+          "tree_id": "1f4b792e7b99dfe01d704502f2761dcb5f8c4d2a",
+          "url": "https://github.com/GerHobbelt/opentelemetry-cpp/commit/17da6d87c1fbd5e63260b3eb414e426e255dfebd"
+        },
+        "date": 1698672379487,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "BM_OtlpExporterEmptySpans",
+            "value": 43.66456295068853,
+            "unit": "ns/iter",
+            "extra": "iterations: 3166000\ncpu: 43.388408085912815 ns\nthreads: 1"
+          },
+          {
+            "name": "BM_OtlpExporterSparseSpans",
+            "value": 157.40237608858587,
+            "unit": "ns/iter",
+            "extra": "iterations: 972000\ncpu: 151.36018518518517 ns\nthreads: 1"
+          },
+          {
+            "name": "BM_OtlpExporterDenseSpans",
+            "value": 1044.3654927340422,
+            "unit": "ns/iter",
+            "extra": "iterations: 132000\ncpu: 1039.1909090909087 ns\nthreads: 1"
+          },
+          {
+            "name": "BM_otlp_grpc_with_collector",
+            "value": 2917782.146127979,
+            "unit": "ns/iter",
+            "extra": "iterations: 199\ncpu: 640961.3065326634 ns\nthreads: 1"
           }
         ]
       }
