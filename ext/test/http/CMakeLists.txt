@@ -11,6 +11,12 @@ if(WITH_HTTP_CLIENT_CURL)
   if(TARGET CURL::libcurl)
     target_link_libraries(${FILENAME} opentelemetry_http_client_curl
                           opentelemetry_common CURL::libcurl)
+  elseif(TARGET CURL::libcurl_static)
+    target_link_libraries(${FILENAME} opentelemetry_http_client_curl
+                          opentelemetry_common CURL::libcurl_static)
+  elseif(TARGET CURL::libcurl_shared)
+    target_link_libraries(${FILENAME} opentelemetry_http_client_curl
+                          opentelemetry_common CURL::libcurl_shared)
   else()
     include_directories(${CURL_INCLUDE_DIRS})
     target_link_libraries(${FILENAME} ${CURL_LIBRARIES}

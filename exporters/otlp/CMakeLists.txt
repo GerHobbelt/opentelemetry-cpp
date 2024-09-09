@@ -313,6 +313,9 @@ if(BUILD_TESTING)
 
   if(NOT GMOCK_LIB AND TARGET GTest::gmock)
     set(GMOCK_LIB GTest::gmock)
+    if (TARGET GTest::gmock_main)
+      list(APPEND GMOCK_LIB GTest::gmock_main)
+    endif()
   elseif(MSVC)
     # Explicitly specify that we consume GTest from shared library. The rest of
     # code logic below determines whether we link Release or Debug flavor of the
