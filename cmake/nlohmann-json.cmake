@@ -29,6 +29,7 @@
 #
 
 # nlohmann_json package is required for most SDK build configurations
+hunter_add_package(nlohmann_json)
 find_package(nlohmann_json QUIET)
 set(nlohmann_json_clone FALSE)
 if(nlohmann_json_FOUND)

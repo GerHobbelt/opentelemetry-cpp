@@ -15,6 +15,16 @@ if(TARGET CURL::libcurl)
     opentelemetry_http_client_curl
     PUBLIC opentelemetry_ext
     PRIVATE CURL::libcurl)
+elseif(TARGET CURL::libcurl_static)
+  target_link_libraries(
+    opentelemetry_http_client_curl
+    PUBLIC opentelemetry_ext
+    PRIVATE CURL::libcurl_static)
+elseif(TARGET CURL::libcurl_shared)
+  target_link_libraries(
+    opentelemetry_http_client_curl
+    PUBLIC opentelemetry_ext
+    PRIVATE CURL::libcurl_shared)
 else()
   target_include_directories(opentelemetry_http_client_curl
                              INTERFACE "${CURL_INCLUDE_DIRS}")
