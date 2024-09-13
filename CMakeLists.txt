@@ -358,6 +358,7 @@ endif()
 include(GNUInstallDirs)
 
 if(WITH_PROMETHEUS)
+  hunter_add_package(prometheus-cpp)
   find_package(prometheus-cpp CONFIG QUIET)
   if(NOT prometheus-cpp_FOUND)
     message(STATUS "Trying to use local prometheus-cpp from submodule")
