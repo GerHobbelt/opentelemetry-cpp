@@ -347,6 +347,11 @@ std::shared_ptr<grpc::Channel> OtlpGrpcClient::MakeChannel(const OtlpGrpcClientO
     grpc_arguments.SetCompressionAlgorithm(GRPC_COMPRESS_GZIP);
   }
 
+  if (!options.load_balancing_policy_name.empty())
+  {
+    grpc_arguments.SetLoadBalancingPolicyName(options.load_balancing_policy_name);
+  }
+
   if (options.use_ssl_credentials)
   {
     grpc::SslCredentialsOptions ssl_opts;

@@ -58,6 +58,9 @@ struct OtlpGrpcClientOptions
   /** Compression type. */
   std::string compression;
 
+  /** Load balancing policy name. */
+  std::string load_balancing_policy_name;
+
 #ifdef ENABLE_ASYNC_EXPORT
   // Concurrent requests
   std::size_t max_concurrent_requests;
