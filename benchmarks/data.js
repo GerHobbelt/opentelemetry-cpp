@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1747242965592,
+  "lastUpdate": 1747242971992,
   "repoUrl": "https://github.com/GerHobbelt/opentelemetry-cpp",
   "entries": {
     "OpenTelemetry-cpp api Benchmark": [
@@ -42082,6 +42082,54 @@ window.BENCHMARK_DATA = {
             "value": 2169136.3292051754,
             "unit": "ns/iter",
             "extra": "iterations: 291\ncpu: 460012.84879725095 ns\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "49699333+dependabot[bot]@users.noreply.github.com",
+            "name": "dependabot[bot]",
+            "username": "dependabot[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "ed91e718f720e7209fcbb55fe37987888d45f58f",
+          "message": "Bump github/codeql-action from 3.28.16 to 3.28.17 (#3389)\n\nBumps [github/codeql-action](https://github.com/github/codeql-action) from 3.28.16 to 3.28.17.\n- [Release notes](https://github.com/github/codeql-action/releases)\n- [Changelog](https://github.com/github/codeql-action/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/github/codeql-action/compare/28deaeda66b76a05916b6923827895f2b14ab387...60168efe1c415ce0f5521ea06d5c2062adbeed1b)\n\n---\nupdated-dependencies:\n- dependency-name: github/codeql-action\n  dependency-version: 3.28.17\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "timestamp": "2025-05-04T19:40:59-07:00",
+          "tree_id": "c281454f9262295d6e75b2cffc52b242e9264f86",
+          "url": "https://github.com/GerHobbelt/opentelemetry-cpp/commit/ed91e718f720e7209fcbb55fe37987888d45f58f"
+        },
+        "date": 1747242970023,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "BM_OtlpExporterEmptySpans",
+            "value": 17.67879749827055,
+            "unit": "ns/iter",
+            "extra": "iterations: 7767000\ncpu: 17.67719634350457 ns\nthreads: 1"
+          },
+          {
+            "name": "BM_OtlpExporterSparseSpans",
+            "value": 132.7905118522244,
+            "unit": "ns/iter",
+            "extra": "iterations: 1049000\ncpu: 131.38422592945665 ns\nthreads: 1"
+          },
+          {
+            "name": "BM_OtlpExporterDenseSpans",
+            "value": 970.9612963950798,
+            "unit": "ns/iter",
+            "extra": "iterations: 146000\ncpu: 968.5443561643833 ns\nthreads: 1"
+          },
+          {
+            "name": "BM_otlp_grpc_with_collector",
+            "value": 1696108.7260329933,
+            "unit": "ns/iter",
+            "extra": "iterations: 228\ncpu: 610799.4385964911 ns\nthreads: 1"
           }
         ]
       }
