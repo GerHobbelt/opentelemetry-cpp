@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1772805970677,
+  "lastUpdate": 1772806107858,
   "repoUrl": "https://github.com/GerHobbelt/opentelemetry-cpp",
   "entries": {
     "OpenTelemetry-cpp api Benchmark": [
@@ -42844,6 +42844,54 @@ window.BENCHMARK_DATA = {
             "value": 1816272.7355957031,
             "unit": "ns/iter",
             "extra": "iterations: 216\ncpu: 642704.3009259258 ns\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "matthieu.morel35@gmail.com",
+            "name": "Matthieu MOREL",
+            "username": "mmorel-35"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "35a747c2fc2a6777940e21c99f64ab8a070b3e16",
+          "message": "[CI] Fix publish-to-bcr workflow (#3869)\n\nSigned-off-by: Matthieu MOREL <matthieu.morel35@gmail.com>",
+          "timestamp": "2026-02-18T22:17:46+01:00",
+          "tree_id": "9f5f1a71a2eeea6dce3ac929ee885efc04edcbf5",
+          "url": "https://github.com/GerHobbelt/opentelemetry-cpp/commit/35a747c2fc2a6777940e21c99f64ab8a070b3e16"
+        },
+        "date": 1772806105800,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "BM_OtlpExporterEmptySpans",
+            "value": 17.450094859290115,
+            "unit": "ns/iter",
+            "extra": "iterations: 7869000\ncpu: 17.45011843944593 ns\nthreads: 1"
+          },
+          {
+            "name": "BM_OtlpExporterSparseSpans",
+            "value": 137.69725462754263,
+            "unit": "ns/iter",
+            "extra": "iterations: 1042000\ncpu: 133.98538195777354 ns\nthreads: 1"
+          },
+          {
+            "name": "BM_OtlpExporterDenseSpans",
+            "value": 991.8903958970222,
+            "unit": "ns/iter",
+            "extra": "iterations: 138000\ncpu: 988.2374782608698 ns\nthreads: 1"
+          },
+          {
+            "name": "BM_otlp_grpc_with_collector",
+            "value": 2091241.029142602,
+            "unit": "ns/iter",
+            "extra": "iterations: 163\ncpu: 859225.7607361965 ns\nthreads: 1"
           }
         ]
       }
